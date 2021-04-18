@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!--Developed by - Akhilesh Parmar, Deepak Choudhary, Mrityunjay Sharma, Phaguni Prajapati, Tanushree Charvey-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <!-- Optional JavaScript; choose one of the two! Developed by - Akhilesh Parmar, Deepak Choudhary, Mrityunjay Sharma, Phaguni Prajapati, Tanushree Charvey-->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+       
+
+
+        <style>
+
+
+        #heading {
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            color: #00264d;
+        }
+
+        .navigation {
+            color: white;
+        }
+
+        .navigation:hover {
+            font-weight: bold;
+            color: orange;
+            text-decoration: none;
+        }
+
+        #cards {
+            text-decoration: none;
+            color: black;
+        }
+
+        #cards:hover {
+            color: rgb(0, 64, 255);
+            font-weight: bold;
+        }
+
+
+        .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 1);
+            overflow-y: hidden;
+            overflow-x: hidden;
+            transition: 0.6s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            margin-top: 0px;
+            scroll-behavior: auto;
+            height: auto;
+            overflow-x: hidden;
+        }
+
+        .overlay a {
+            text-decoration: none;
+            font-size: 36px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            right: 20px;
+            font-size: 60px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay {
+                overflow-y: auto;
+            }
+
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+
+        #myBtn {
+            position: fixed;
+            bottom: 2%;
+            right: 2%;
+            border: none;
+            border-radius: 50%;
+            background: none;
+            color: grey;
+            padding: 1em;
+            font-size: 0.9em;
+            background: none;
+            outline: none;
+        }
+
+        #myBtn:hover {
+            color: black;
+            text-decoration: none;
+            outline: none;
+            font-size: 1em;
+        }
+
+        #myBtn:active {
+            outline: none;
+            text-decoration: none;
+            border: none;
+        }
+    </style>
+
+    <link rel="icon" href="D:/html/sage.jpeg" type="image/icon type">
+    <title>SDC 2021</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <a href="https://sageuniversity.in/"><img src="D:/html/sdc1.jpg" height="100em" /></a>         
+            </div>
+            <div class="col-md-9 text-center p-4">
+                <h1 class="display-5 text-center" id="heading">SAGE Developers Club</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid nav-scroller py-2 px-1 " style="background-color: #00264d;">
+       <nav class="nav d-flex justify-content-between">
+         <li class="nav-item">
+        <a class="py-2 mx-3 navigation ropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#">Home</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="Sdc_Home.html">Home</a>
+
+        </div>
+        </li>   
+        <li class="nav-item">
+        <a class="py-2 mx-3 navigation ropdown-toggle dropdown-toggle-split"id="Team" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" >Community</a>
+        <div class="dropdown-menu">
+            <a  class="dropdown-item" href="#">Team</a>
+             <a  class="dropdown-item" href="community.html">Community</a>  
+        </div>
+    </li>
+            
+       
+        <li class="nav-item" >
+        <a class="py-2 mx-3 navigation ropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#">Events</a> 
+        <div class="dropdown-menu" >
+            <a  class="dropdown-item" href="#">Events</a>
+            <a  class="dropdown-item" href="#">Gallery</a>
+        </div>
+       </li>
+           
+       <li class="nav-item">
+        <a class="py-2 mx-3 navigation ropdown-toggle dropdown-toggle-split" data-toggle="dropdown" href="#">Contact & FAQ</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="">Contact</a>
+            <a class="dropdown-item" href="">Code Of Conduct</a>
+            <a class="dropdown-item" href="">FAQ</a>
+
+        </div>
+        </li>    
+                
+    </div>
+    </nav>
+    </div>
+
+    <img src="D:/html/sdc.jpeg" class="img-fluid" alt="Responsive image" style="height: 30vw; width:100%;">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif; text-align:justify;">
+            <h1 class="display-5">About SDC</h1>
+            <p class="lead"><span style="font-weight: bold;">Department of Computer Science Engineering & Information Technology, SAGE University Indore,</span> Started an SAGE Developers & Professional Chapter in association with <span style="font-weight: bold;">SAGE Student Ambessador, ACM, IIC & CSI.</span></p>
+            <p class="lead">SDC is SAGE Developer Club,University-based community group for students interested in New developing technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a SDC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+ 
+            <p class="lead">The SAGE Developers Club is here for you to introduce with all the emerging, existing technology & make you ready to start your carrier with the best of your interest in Technology.</p>
+
+            <p class="lead">SDC have a lot to offer. Whether you join as a member or choose to lead one, simply taking part in an extracurricular group will enhance your experience. Gaining skills, making that's ready to take on their future career!connections, and broadening your knowledge through a Student Community.SDC will help you become a more well-rounded individual.
+
+            </p> 
+        </div>
+        <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif; text-align:justify;">
+            <h1 class="display-5" style="color:red; ">Benefits Of SDC</h1>
+            <div class="col-md-6 p-2" >
+                    <ul class="">
+                        <li class="">It's chance to build your skillset.</li>
+                        <li class="">You'll learn how to work with Team.</li>
+                        <li class="">It lead to great Friendship and new Networking opportunities.</li>
+                        <li class="">You'll learn how to engage with diverse groups of people</li>
+                        <li class="">You'll able yo practice skills you've learned in class.</li>
+                        <li class="">You'll gain leadership skills.</li>
+                        <li class="">It helps you to become more collaborative.</li>
+                        <li class="">You'll expand your Resume.</li>
+                        <li class="">You'll be able to give back to community.</li>
+                        <li class="">You'll have Fun.</li>
+
+                    </ul>
+                </div>
+        
+        </div>
+
+         <div class="container" style="font-family:Georgia, 'Times New Roman', Times, serif; text-align:justify;">
+            
+            <p class="lead">We conduct several workshops, seminars, hackethones etc inside our university apart from this our main focus is how we can collaborate to solve a local problem and bring an efficient solution to the community.</p>
+            By the mentioned below link, you can join SDC.<br> <a href="https://forms.gle/S2hwvkfYSp1eYz5q8">https://forms.gle/S2hwvkfYSp1eYz5q8</a><br> 
+        </div>
+        <div class="text-center">
+        <img  src="D:/html/sdc1.jpg" alt="Sdc_logo" height="70em" >
+    </div>
+</div>
+<footer class="bg-dark text-white">
+  <div class="container p-2">
+    <h1 style="text-align: right; font-size: 2em;">You Can Find Us At</h1>
+    <section class="mb-2 row"  >
+
+        <div class="col-md-2 ">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="D:/html/Sage2.png" class="w-90" height="100em"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="D:/html/Sage2.png" class="w-90" height="100em"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="D:/html/Sage2.png" class="w-90" height="100em"/>
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2 ">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded"data-ripple-color="light">
+            <img src="D:/html/Sage2.png"class="w-90" height="100em" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+      <!-- Facebook -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/Instagram.jpeg" height="30em"></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/Twitter.jpeg" height="30em"></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/Instagram.jpeg" height="30em"></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/Twitter.jpeg" height="30em"></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/x.jpeg" height="30em"></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+        ><img src="D:/html/Twitter.jpeg" height="30em"></a>
+    </section>
+    <!-- Section: Social media -->
+  
+    
+  </div>
+  
+</footer>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+</button>
+</body>
+</html>
